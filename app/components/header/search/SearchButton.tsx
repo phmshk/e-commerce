@@ -1,12 +1,18 @@
+import { cn } from "@/app/lib/utils";
+import { Button } from "@/app/shadcn/components/ui/button";
 import { Menu } from "lucide-react";
 
 export const SearchButton = () => {
   return (
-    <button className="bg-primary hover:shadow-hover active:shadow-pressed hidden md:flex w-10 lg:w-32 gap-4 p-2 cursor-pointer duration-300 rounded">
-      <Menu className="size-6 text-primary-foreground" />
-      <span className="hidden lg:block text-base text-primary-foreground">
-        Catalog
-      </span>
-    </button>
+    <Button
+      variant="default"
+      className={cn(
+        "hidden md:flex h-10 gap-4 px-3 lg:w-32 justify-start",
+        "transition-all duration-300 shadow-sm hover:shadow-md active:scale-95",
+      )}
+    >
+      <Menu className="size-6" />
+      <span className="hidden lg:block text-base font-medium">Catalog</span>
+    </Button>
   );
 };

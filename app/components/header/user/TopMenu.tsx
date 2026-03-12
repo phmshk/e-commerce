@@ -1,3 +1,5 @@
+import { cn } from "@/app/lib/utils";
+import { Button } from "@/app/shadcn/components/ui/button";
 import { Box, Heart, Menu, ShoppingCart } from "lucide-react";
 
 const MENU_ITEMS = [
@@ -26,16 +28,13 @@ const MENU_ITEMS = [
 
 export const TopMenu = () => {
   return (
-    <ul className="flex flex-row gap-x-6 items-end">
+    <ul className="flex flex-row gap-x-2 md:gap-x-4 items-end">
       {MENU_ITEMS.map(({ id, icon: Icon, label, hideOnMd }) => (
-        <li key={id} className={hideOnMd ? "md:hidden" : ""}>
-          <div
-            className="flex flex-col items-center gap-2.5 w-10 cursor-pointer"
-            aria-label={label}
-          >
-            <Icon className="size-6" aria-hidden="true" />
-            <span className="text-xs">{label}</span>
-          </div>
+        <li key={id} className={cn(hideOnMd && "md:hidden")}>
+          <Button variant="nav" size="header" aria-label={label}>
+            <Icon className="size-5 md:size-6" />
+            <span className="text-[10px] md:text-xs font-medium">{label}</span>
+          </Button>
         </li>
       ))}
     </ul>

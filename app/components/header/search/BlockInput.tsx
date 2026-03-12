@@ -1,15 +1,16 @@
+import { Input } from "@/app/shadcn/components/ui/input";
 import { Search } from "lucide-react";
 
 export const BlockInput = () => {
   return (
     <div className="min-w-[260px] relative grow">
-      <input
+      <Input
         id="search-input"
         type="text"
         placeholder="Search products..."
-        className="w-full h-10 rounded p-2 outline outline-primary focus:shadow-subtle"
+        className="h-10 w-full pr-10 focus-visible:ring-primary focus-visible:ring-1"
       />
-      <div className="absolute top-2 right-2 pointer-events-none">
+      <div className="absolute inset-y-0 right-3 flex items-center pointer-events-none text-muted-foreground/60">
         <Search className="size-6" />
       </div>
     </div>
