@@ -8,7 +8,7 @@ export const BlockUser = () => {
       <div
         className={cn(
           // mobile
-          "fixed bottom-0 left-0 right-0 h-16 bg-background border-t border-border px-6 shadow-sm shadow-accent",
+          "fixed bottom-0 left-0 right-0 h-16 bg-header-bg border-t border-border px-6 shadow-sm shadow-accent",
           //desktop
           "md:static md:h-auto md:bg-transparent md:border-none md:shadow-none md:px-0",
           "flex flex-row justify-between items-center w-full",

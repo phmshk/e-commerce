@@ -3,7 +3,7 @@ import { Search } from "lucide-react";
 
 export const BlockInput = () => {
   return (
-    <div className="min-w-[260px] relative grow">
+    <div className="min-w-[260px] flex-1 w-full relative">
       <Input
         id="search-input"
         type="text"

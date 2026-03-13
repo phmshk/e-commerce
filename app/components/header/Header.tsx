@@ -5,18 +5,25 @@ import { BlockUser } from "./user/BlockUser";
 
 export const Header = () => {
   return (
-    <header
-      className={cn(
-        "bg-header-bg border-b border-border w-full relative z-10",
-        "flex flex-col md:flex-row justify-center",
-        "md:gap-y-5 xl:gap-y-10 md:p-2",
-      )}
-    >
-      <div className="flex flex-row gap-4 xl:gap-10 py-2 px-4 items-center ">
-        <BlockLogo />
-        <BlockSearch />
+    <header className="relative z-50 w-full border-b border-border bg-header-bg">
+      <div
+        className={cn(
+          "mx-auto flex w-full max-w-[1440px] items-center justify-between gap-4 px-4 py-3",
+          "md:flex-row md:px-8",
+        )}
+      >
+        <div className="flex shrink-0 items-center">
+          <BlockLogo />
+        </div>
+
+        <div className="flex w-full flex-1 items-center justify-center md:px-6 lg:px-12">
+          <BlockSearch />
+        </div>
+
+        <div className="flex shrink-0 items-center justify-end">
+          <BlockUser />
+        </div>
       </div>
-      <BlockUser />
     </header>
   );
 };

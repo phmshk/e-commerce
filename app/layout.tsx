@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${interFont.variable} ${interFont.className} antialiased`}
+        className={`${interFont.variable} ${interFont.className} min-h-screen antialiased`}
       >
         <Header />
         {children}

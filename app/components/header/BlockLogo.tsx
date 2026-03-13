@@ -17,7 +17,7 @@ export const BlockLogo = () => {
         <ShoppingBag className="size-6 text-primary" strokeWidth={2.5} />
       </div>
 
-      <span className="text-xl font-bold tracking-tight text-foreground hidden md:block">
+      <span className="text-xl font-bold hidden md:block">
         Luma<span className="text-primary">.</span>
       </span>
     </Link>
