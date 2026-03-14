@@ -1,0 +1,74 @@
+{
+  "posts": [
+    {
+      "id": "post-1",
+      "slug": "smart-lighting-guide-2026",
+      "title": "How Smart Lighting Transforms Your Daily Sleep Cycle",
+      "previewText": "Learn how circadian rhythm lighting can improve your sleep quality and energy levels throughout the day using simple smart home automations.",
+      "content": "Full article content about circadian rhythms, color temperature (K), and how the Aura Smart Desk Lamp helps maintaining natural biological clocks...",
+      "coverImage": "/images/articles/a1-preview.webp",
+      "category": "guide",
+      "author": {
+        "name": "Alex Rivers",
+        "role": "Smart Home Specialist",
+        "avatar": "/images/authors/author1.webp"
+      },
+      "publishedAt": "2026-03-10T10:00:00Z",
+      "readingTime": 5,
+      "tags": ["lighting", "wellness", "automation"]
+    },
+    {
+      "id": "post-2",
+      "slug": "minimalist-workspace-setup-tips",
+      "title": "5 Principles of a Productive Minimalist Workspace",
+      "previewText": "Declutter your mind by decluttering your desk. We explore the essential tools for a high-performance, wireless professional environment.",
+      "content": "A deep dive into ergonomic furniture, the importance of monitor light bars, and why wireless mechanical keyboards are the gold standard for 2026...",
+      "coverImage": "/images/articles/a2-preview.webp",
+      "category": "lifestyle",
+      "author": {
+        "name": "Sarah Chen",
+        "role": "Interior Designer",
+        "avatar": "/images/authors/author2.webp"
+      },
+      "publishedAt": "2026-03-12T14:30:00Z",
+      "readingTime": 7,
+      "tags": ["workspace", "productivity", "design"]
+    },
+    {
+      "id": "post-3",
+      "slug": "pureair-pro-gen3-in-depth-review",
+      "title": "Review: PureAir Pro Gen 3 – Does It Really Capture 99% of Pollutants?",
+      "previewText": "We put the latest PureAir Pro to the test in a real-world city apartment to see if the HEPA H13 filtration lives up to the hype.",
+      "content": "Technical analysis of CADR ratings, noise level tests in Night Mode, and how the air quality sensor integrates with mobile applications...",
+      "coverImage": "/images/articles/a3-preview.webp",
+      "category": "review",
+      "author": {
+        "name": "Sarah Chen",
+        "role": "Interior Designer",
+        "avatar": "/images/authors/author2.webp"
+      },
+
+      "publishedAt": "2026-03-13T09:15:00Z",
+      "readingTime": 10,
+      "tags": ["wellness", "review", "gadgets"]
+    },
+    {
+      "id": "post-4",
+      "slug": "future-of-matter-smart-home",
+      "title": "Matter Protocol: The End of Smart Home Fragmentation?",
+      "previewText": "Everything you need to know about the latest updates in smart home connectivity and how it affects your current device ecosystem.",
+      "content": "Explaining Zigbee, IR, and the new Matter standards. Why a Universal Smart Hub is still the heart of a reliable home network in 2026...",
+      "coverImage": "/images/articles/a4-preview.webp",
+      "category": "smart-home",
+      "author": {
+        "name": "Michael Thorne",
+        "role": "Tech Reviewer",
+        "avatar": "/images/authors/michael.webp"
+      },
+
+      "publishedAt": "2026-03-14T11:00:00Z",
+      "readingTime": 4,
+      "tags": ["smart-home", "connectivity", "news"]
+    }
+  ]
+}

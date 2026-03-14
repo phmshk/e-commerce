@@ -1,0 +1,154 @@
+{
+  "products": [
+    {
+      "id": "p1",
+      "img": "/images/products/1.webp",
+      "title": "Aura Smart Desk Lamp",
+      "description": "Adjustable color temperature and brightness with app control and circadian rhythm sync.",
+      "basePrice": 89,
+      "discountPercent": 0,
+      "rating": 4.8,
+      "categories": ["lighting", "workspace", "new"]
+    },
+    {
+      "id": "p2",
+      "img": "/images/products/2.webp",
+      "title": "PureAir Pro Gen 3",
+      "description": "HEPA H13 filtration with real-time air quality monitoring and ultra-quiet night mode.",
+      "basePrice": 499,
+      "discountPercent": 15,
+      "rating": 4.9,
+      "categories": ["wellness", "discounted"]
+    },
+    {
+      "id": "p3",
+      "img": "/images/products/3.webp",
+      "title": "Minimalist Mechanical Keyboard",
+      "description": "Wireless low-profile mechanical keyboard with multi-device pairing and white backlight.",
+      "basePrice": 219,
+      "discountPercent": 0,
+      "rating": 4.7,
+      "categories": ["workspace"]
+    },
+    {
+      "id": "p4",
+      "img": "/images/products/4.webp",
+      "title": "Ambient Light Strip 2m",
+      "description": "Addressable RGBIC LEDs that sync with your screen or music for immersive experience.",
+      "basePrice": 55,
+      "discountPercent": 25,
+      "rating": 4.5,
+      "categories": ["lighting", "discounted"]
+    },
+    {
+      "id": "p5",
+      "img": "/images/products/5.webp",
+      "title": "Smart Humidifier Cloud",
+      "description": "Ultrasonic cool mist humidifier with integrated essential oil diffuser.",
+      "basePrice": 120,
+      "discountPercent": 0,
+      "rating": 4.6,
+      "categories": ["wellness", "new"]
+    },
+    {
+      "id": "p6",
+      "img": "/images/products/6.webp",
+      "title": "ErgoStand Laptop Riser",
+      "description": "Aluminum adjustable laptop stand to improve posture and cooling during work.",
+      "basePrice": 65,
+      "discountPercent": 0,
+      "rating": 4.4,
+      "categories": ["workspace"]
+    },
+    {
+      "id": "p7",
+      "img": "/images/products/7.webp",
+      "title": "Sphere Smart Mood Lamp",
+      "description": "Portable touch-sensitive lamp with 16 million colors and USB-C charging.",
+      "basePrice": 79,
+      "discountPercent": 0,
+      "rating": 4.8,
+      "categories": ["lighting", "new"]
+    },
+    {
+      "id": "p8",
+      "img": "/images/products/8.webp",
+      "title": "Noise-Cancelling Desk Pods",
+      "description": "Wireless earbuds optimized for clear calls and deep focus in open offices.",
+      "basePrice": 249,
+      "discountPercent": 20,
+      "rating": 4.7,
+      "categories": ["workspace", "electronics", "discounted"]
+    },
+    {
+      "id": "p9",
+      "img": "/images/products/9.webp",
+      "title": "Smart Air Quality Monitor",
+      "description": "Tracks CO2, VOCs, humidity and temperature with historical data export.",
+      "basePrice": 149,
+      "discountPercent": 0,
+      "rating": 4.3,
+      "categories": ["wellness", "electronics", "new"]
+    },
+    {
+      "id": "p10",
+      "img": "/images/products/10.webp",
+      "title": "Zenith Floor Lamp",
+      "description": "Modern minimalist floor lamp with indirect lighting and smart home integration.",
+      "basePrice": 289,
+      "discountPercent": 0,
+      "rating": 4.9,
+      "categories": ["lighting", "new"]
+    },
+    {
+      "id": "p11",
+      "img": "/images/products/11.webp",
+      "title": "Universal Smart Hub",
+      "description": "One device to control all your IR and Zigbee smart home gadgets via voice.",
+      "basePrice": 45,
+      "discountPercent": 0,
+      "rating": 4.2,
+      "categories": ["electronics"]
+    },
+    {
+      "id": "p12",
+      "img": "/images/products/12.webp",
+      "title": "Bamboo Wireless Charger",
+      "description": "Fast 15W wireless charging pad made from sustainable bamboo materials.",
+      "basePrice": 49,
+      "discountPercent": 0,
+      "rating": 4.5,
+      "categories": ["workspace", "electronics"]
+    },
+    {
+      "id": "p13",
+      "img": "/images/products/13.webp",
+      "title": "SleepWell Smart Diffuser",
+      "description": "Timed aroma diffusion with white noise generator for better sleep cycles.",
+      "basePrice": 165,
+      "discountPercent": 30,
+      "rating": 4.6,
+      "categories": ["wellness", "lighting", "discounted"]
+    },
+    {
+      "id": "p14",
+      "img": "/images/products/14.webp",
+      "title": "Monitor Light Bar",
+      "description": "Screen-hanging light that eliminates glare and saves desk space.",
+      "basePrice": 95,
+      "discountPercent": 10,
+      "rating": 4.7,
+      "categories": ["workspace", "lighting", "discounted"]
+    },
+    {
+      "id": "p15",
+      "img": "/images/products/15.webp",
+      "title": "Duo Smart Plugs (2-pack)",
+      "description": "Control power consumption and schedule your non-smart appliances easily.",
+      "basePrice": 39,
+      "discountPercent": 0,
+      "rating": 4.4,
+      "categories": ["electronics"]
+    }
+  ]
+}

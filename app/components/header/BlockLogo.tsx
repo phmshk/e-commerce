@@ -18,7 +18,7 @@ export const BlockLogo = () => {
       </div>
 
       <span className="text-xl font-bold hidden md:block">
-        Luma<span className="text-primary">.</span>
+        Lumia<span className="text-primary">.</span>
       </span>
     </Link>
   );

@@ -1,7 +1,7 @@
-import { HeroSlide } from "./types";
-import slide1 from "@/public/images/carousel/light-carousel.avif";
-import slide2 from "@/public/images/carousel/desk-carousel.avif";
-import slide3 from "@/public/images/carousel/air-carousel.avif";
+import { HeroSlide } from "./types/types";
+import slide1 from "@/public/images/carousel/light-carousel.webp";
+import slide2 from "@/public/images/carousel/desk-carousel.webp";
+import slide3 from "@/public/images/carousel/air-carousel.webp";
 
 export const HERO_SLIDES: HeroSlide[] = [
   {
