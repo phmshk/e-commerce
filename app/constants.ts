@@ -1,11 +1,11 @@
-import { HeroSlide } from "./types/types";
+import { HeroSlide } from "./types/common";
 import slide1 from "@/public/images/carousel/light-carousel.webp";
 import slide2 from "@/public/images/carousel/desk-carousel.webp";
 import slide3 from "@/public/images/carousel/air-carousel.webp";
 
 export const HERO_SLIDES: HeroSlide[] = [
   {
-    id: 1,
+    id: "1",
     title: "Illumination for Your Mood",
     description:
       "Discover our collection of smart ambient lamps designed to sync with your lifestyle.",
@@ -15,7 +15,7 @@ export const HERO_SLIDES: HeroSlide[] = [
     image: slide1,
   },
   {
-    id: 2,
+    id: "2",
     title: "Minimalist Workspace, Maximum Focus",
     description:
       "Professional-grade tools and wireless solutions for a clutter-free desk.",
@@ -25,7 +25,7 @@ export const HERO_SLIDES: HeroSlide[] = [
     image: slide2,
   },
   {
-    id: 3,
+    id: "3",
     title: "Breathe Better, Live Smarter",
     description:
       "Intelligent air systems that maintain the perfect atmosphere in your home.",
@@ -35,3 +35,6 @@ export const HERO_SLIDES: HeroSlide[] = [
     image: slide3,
   },
 ];
+
+export const MAX_PRODUCTS_IN_GRID_MAIN = 4;
+export const MAX_POSTS_IN_GRID_MAIN = 4;

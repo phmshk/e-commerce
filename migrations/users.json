@@ -1,0 +1,72 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "name": "Alex Rivers",
+      "email": "alex.rivers@smartdev.io",
+      "avatar": "",
+      "role": "customer",
+      "wishlist": ["p2", "p8", "p14"],
+      "orders": [
+        {
+          "id": "ord-5501",
+          "createdAt": "2026-02-10T14:20:00Z",
+          "status": "delivered",
+          "totalAmount": 588,
+          "shippingAddress": "123 Tech Lane, San Francisco, CA",
+          "items": [
+            {
+              "id": "p2",
+              "title": "PureAir Pro Gen 3",
+              "img": "/images/products/2.webp",
+              "purchasePrice": 499,
+              "quantity": 1
+            },
+            {
+              "id": "p1",
+              "title": "Aura Smart Desk Lamp",
+              "img": "/images/products/1.webp",
+              "purchasePrice": 89,
+              "quantity": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "name": "Sarah Chen",
+      "email": "s.chen@minimalist.com",
+      "avatar": "",
+      "role": "customer",
+      "wishlist": ["p3", "p10"],
+      "orders": [
+        {
+          "id": "ord-7702",
+          "createdAt": "2026-03-01T09:15:00Z",
+          "status": "shipped",
+          "totalAmount": 219,
+          "shippingAddress": "45 Design St, Brooklyn, NY",
+          "items": [
+            {
+              "id": "p3",
+              "title": "Minimalist Mechanical Keyboard",
+              "img": "/images/products/3.webp",
+              "purchasePrice": 219,
+              "quantity": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "name": "Admin Root",
+      "email": "admin@lumia-store.com",
+      "avatar": "",
+      "role": "admin",
+      "wishlist": [],
+      "orders": []
+    }
+  ]
+}

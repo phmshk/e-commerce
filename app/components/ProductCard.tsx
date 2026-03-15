@@ -2,16 +2,15 @@
 
 import Image from "next/image";
 import { Star, ShoppingCart, Heart } from "lucide-react";
-import { ProductCard as ProductCardType } from "@/app/types/types";
+import { Product as ProductCardType } from "@/app/types";
 import { Button } from "@/app/shadcn/components/ui/button";
 import {
-  Card,
   CardHeader,
   CardTitle,
   CardDescription,
   CardFooter,
 } from "@/app/shadcn/components/ui/card";
-import { formatPrice } from "@/app/lib/utils";
+import { BADGE_CONFIG, formatPrice, getActiveBadges } from "@/app/lib/utils";
 import { Badge } from "@/app/shadcn/components/ui/badge";
 import { BaseCard } from "@/app/components/BaseCard";
 
@@ -23,6 +22,7 @@ export function ProductCard({ product }: ProductCardProps) {
   const { img, title, description, basePrice, discountPercent, rating } =
     product;
 
+  const activeBadges = getActiveBadges(product);
   const finalPrice =
     discountPercent > 0 ? basePrice * (1 - discountPercent / 100) : basePrice;
 
@@ -31,20 +31,30 @@ export function ProductCard({ product }: ProductCardProps) {
       {/* Image Container */}
       <div className="relative aspect-square w-full overflow-hidden bg-secondary/30 rounded-b-2xl">
         {/* Discount Badge (Top Left) */}
-        {discountPercent > 0 && (
-          <Badge
-            className="absolute left-3 top-3 z-10 shadow-sm"
-            variant="sale"
-          >
-            -{discountPercent}%
-          </Badge>
-        )}
+        <div className="absolute left-3 top-3 z-10 flex items-center flex-wrap overflow-hidden max-h-5 sm:max-h-11 gap-1 right-12">
+          {discountPercent > 0 && (
+            <Badge variant="sale" className="shadow-sm">
+              -{discountPercent}%
+            </Badge>
+          )}
+
+          {activeBadges.map((tag) => {
+            const config = BADGE_CONFIG[tag];
+            if (!config) return null;
+
+            return (
+              <Badge key={tag} variant={config.variant} className="shadow-sm">
+                {config.label}
+              </Badge>
+            );
+          })}
+        </div>
 
         {/* Add to Favorites Button (Top Right) */}
         <Button
           variant="ghost"
           size="icon"
-          className="absolute right-3 top-3 z-10 h-8 w-8 rounded-full bg-background/50 backdrop-blur-md transition-all hover:bg-background hover:text-red-500 active:scale-95"
+          className="absolute right-1 sm:right-3 top-1 sm:top-3 z-10 size-8 rounded-full bg-background/50 backdrop-blur-md transition-all hover:bg-background hover:text-red-500 active:scale-95"
           aria-label={`Add ${title} to favorites`}
           onClick={(e) => {
             e.preventDefault();

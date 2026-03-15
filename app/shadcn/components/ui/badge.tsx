@@ -20,7 +20,12 @@ const badgeVariants = cva(
           "hover:bg-muted hover:text-muted-foreground dark:hover:bg-muted/50",
         link: "text-primary underline-offset-4 hover:underline",
         sale: "border-transparent bg-sale text-sale-foreground hover:bg-sale/90 shadow-sm",
-        post: "border-none bg-white/90 dark:bg-black/60 text-foreground backdrop-blur-md shadow-sm font-bold uppercase tracking-[0.05em] text-[10px] px-2.5 py-0.5",
+        post: "border-none bg-background text-foreground backdrop-blur-md shadow-sm font-bold uppercase tracking-[0.05em] text-[10px] px-2.5 py-0.5",
+        new: "border-transparent bg-blue-500 text-white shadow hover:bg-blue-600",
+        bestseller:
+          "border-transparent bg-emerald-500 text-white shadow hover:bg-emerald-500",
+        limited:
+          "border-transparent bg-purple-500 text-white shadow hover:bg-purple-600",
       },
     },
     defaultVariants: {

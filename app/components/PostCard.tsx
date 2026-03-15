@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Clock, ArrowUpRight } from "lucide-react";
-import { Post } from "@/app/types/types";
+import { Post } from "@/app/types";
 import { Badge } from "@/app/shadcn/components/ui/badge";
 import { formatDate } from "@/app/lib/utils";
 import {

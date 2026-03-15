@@ -1,8 +1,18 @@
 import { PostGrid } from "@/app/components/PostGrid";
-import articlesDb from "@/app/data/articles.json";
-import { Post } from "@/app/types/types";
+import { MAX_POSTS_IN_GRID_MAIN } from "@/app/constants";
+import dbConnect from "@/app/lib/dbConnect";
+import Post from "@/app/models/Post";
+import type { Post as PostType } from "@/app/types";
 
-export function BlockLatestPosts() {
-  const posts: Post[] = articlesDb.posts as Post[];
+export const revalidate = 3600;
+
+export const BlockLatestPosts = async () => {
+  await dbConnect();
+  const posts = await Post.find({})
+    .sort({ publishedAt: -1 })
+    .limit(MAX_POSTS_IN_GRID_MAIN)
+    .select("-_id -__v")
+    .lean<PostType[]>();
+
   return <PostGrid posts={posts} />;
-}
+};
