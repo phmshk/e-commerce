@@ -1,8 +1,10 @@
-import { HeroCarousel } from "@/app/components/carousel/HeroCarousel";
-import { BlockSales } from "@/app/components/main/blocks/BlockSales";
-import { SectionWrapper } from "@/app/components/SectionWrapper";
-import { BlockNewArrivals } from "@/app/components/main/blocks/BlockNewArrivals";
-import { BlockLatestPosts } from "@/app/components/main/blocks/BlockLatestPosts";
+import { SectionWrapper } from "@/src/shared/ui/SectionWrapper";
+import { HeroCarousel } from "@/src/widgets/hero-carousel";
+import {
+  BlockLatestPosts,
+  BlockNewArrivals,
+  BlockSales,
+} from "@/src/widgets/main-page-blocks";
 
 export default function Home() {
   return (

@@ -8,7 +8,8 @@
       "basePrice": 89,
       "discountPercent": 0,
       "rating": 4.8,
-      "categories": ["lighting", "workspace", "new"]
+      "categories": ["lighting", "workspace"],
+      "manualBadges": ["new"]
     },
     {
       "id": "p2",
@@ -18,7 +19,8 @@
       "basePrice": 499,
       "discountPercent": 15,
       "rating": 4.9,
-      "categories": ["wellness", "discounted"]
+      "categories": ["wellness", "discounted"],
+      "manualBadges": []
     },
     {
       "id": "p3",
@@ -28,7 +30,8 @@
       "basePrice": 219,
       "discountPercent": 0,
       "rating": 4.7,
-      "categories": ["workspace"]
+      "categories": ["workspace"],
+      "manualBadges": []
     },
     {
       "id": "p4",
@@ -38,7 +41,8 @@
       "basePrice": 55,
       "discountPercent": 25,
       "rating": 4.5,
-      "categories": ["lighting", "discounted"]
+      "categories": ["lighting", "discounted"],
+      "manualBadges": []
     },
     {
       "id": "p5",
@@ -48,7 +52,8 @@
       "basePrice": 120,
       "discountPercent": 0,
       "rating": 4.6,
-      "categories": ["wellness", "new"]
+      "categories": ["wellness"],
+      "manualBadges": ["new"]
     },
     {
       "id": "p6",
@@ -58,7 +63,8 @@
       "basePrice": 65,
       "discountPercent": 0,
       "rating": 4.4,
-      "categories": ["workspace"]
+      "categories": ["workspace"],
+      "manualBadges": []
     },
     {
       "id": "p7",
@@ -68,7 +74,8 @@
       "basePrice": 79,
       "discountPercent": 0,
       "rating": 4.8,
-      "categories": ["lighting", "new"]
+      "categories": ["lighting"],
+      "manualBadges": ["new"]
     },
     {
       "id": "p8",
@@ -78,7 +85,8 @@
       "basePrice": 249,
       "discountPercent": 20,
       "rating": 4.7,
-      "categories": ["workspace", "electronics", "discounted"]
+      "categories": ["workspace", "electronics", "discounted"],
+      "manualBadges": []
     },
     {
       "id": "p9",
@@ -88,7 +96,8 @@
       "basePrice": 149,
       "discountPercent": 0,
       "rating": 4.3,
-      "categories": ["wellness", "electronics", "new"]
+      "categories": ["wellness", "electronics"],
+      "manualBadges": ["new"]
     },
     {
       "id": "p10",
@@ -98,7 +107,8 @@
       "basePrice": 289,
       "discountPercent": 0,
       "rating": 4.9,
-      "categories": ["lighting", "new"]
+      "categories": ["lighting"],
+      "manualBadges": ["new"]
     },
     {
       "id": "p11",
@@ -108,7 +118,8 @@
       "basePrice": 45,
       "discountPercent": 0,
       "rating": 4.2,
-      "categories": ["electronics"]
+      "categories": ["electronics"],
+      "manualBadges": []
     },
     {
       "id": "p12",
@@ -118,7 +129,8 @@
       "basePrice": 49,
       "discountPercent": 0,
       "rating": 4.5,
-      "categories": ["workspace", "electronics"]
+      "categories": ["workspace", "electronics"],
+      "manualBadges": []
     },
     {
       "id": "p13",
@@ -128,7 +140,8 @@
       "basePrice": 165,
       "discountPercent": 30,
       "rating": 4.6,
-      "categories": ["wellness", "lighting", "discounted"]
+      "categories": ["wellness", "lighting", "discounted"],
+      "manualBadges": []
     },
     {
       "id": "p14",
@@ -138,7 +151,8 @@
       "basePrice": 95,
       "discountPercent": 10,
       "rating": 4.7,
-      "categories": ["workspace", "lighting", "discounted"]
+      "categories": ["workspace", "lighting", "discounted"],
+      "manualBadges": []
     },
     {
       "id": "p15",
@@ -148,7 +162,1108 @@
       "basePrice": 39,
       "discountPercent": 0,
       "rating": 4.4,
-      "categories": ["electronics"]
+      "categories": ["electronics"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-1",
+      "img": "/images/products/9.webp",
+      "title": "Lumia Watch Sensors",
+      "description": "Premium sensors solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 209,
+      "discountPercent": 25,
+      "rating": 4.7,
+      "categories": ["security", "discounted"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-2",
+      "img": "/images/products/11.webp",
+      "title": "Lumia Secure Access",
+      "description": "Premium access solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 72,
+      "discountPercent": 0,
+      "rating": 4.4,
+      "categories": ["security"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-3",
+      "img": "/images/products/8.webp",
+      "title": "Lumia Pulse Sensors S",
+      "description": "Premium sensors solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 246,
+      "discountPercent": 0,
+      "rating": 4.6,
+      "categories": ["electronics"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-4",
+      "img": "/images/products/12.webp",
+      "title": "Lumia Spark Power",
+      "description": "Premium power solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 205,
+      "discountPercent": 15,
+      "rating": 4.8,
+      "categories": ["electronics", "discounted"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-5",
+      "img": "/images/products/8.webp",
+      "title": "Lumia Wave Hi-Fi Gen 2",
+      "description": "Premium hi-fi solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 268,
+      "discountPercent": 0,
+      "rating": 5,
+      "categories": ["audio"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-6",
+      "img": "/images/products/20.webp",
+      "title": "Lumia Secure Sensors Max",
+      "description": "Premium sensors solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 238,
+      "discountPercent": 0,
+      "rating": 4.3,
+      "categories": ["security"],
+      "manualBadges": ["new"]
+    },
+    {
+      "id": "p-gen-7",
+      "img": "/images/products/2.webp",
+      "title": "Lumia Breath Air Ultra",
+      "description": "Premium air solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 216,
+      "discountPercent": 0,
+      "rating": 4.7,
+      "categories": ["wellness"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-8",
+      "img": "/images/products/6.webp",
+      "title": "Lumia Grid Organization",
+      "description": "Premium organization solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 281,
+      "discountPercent": 10,
+      "rating": 4.3,
+      "categories": ["workspace", "discounted"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-9",
+      "img": "/images/products/9.webp",
+      "title": "Lumia Volt Power",
+      "description": "Premium power solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 257,
+      "discountPercent": 0,
+      "rating": 4.6,
+      "categories": ["electronics"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-10",
+      "img": "/images/products/3.webp",
+      "title": "Lumia Core Input",
+      "description": "Premium input solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 545,
+      "discountPercent": 0,
+      "rating": 4.5,
+      "categories": ["workspace"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-11",
+      "img": "/images/products/3.webp",
+      "title": "Lumia Flow Ergo Compact",
+      "description": "Premium ergo solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 244,
+      "discountPercent": 0,
+      "rating": 4.6,
+      "categories": ["workspace"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-12",
+      "img": "/images/products/16.webp",
+      "title": "Lumia Beat Smart Audio",
+      "description": "Premium smart audio solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 746,
+      "discountPercent": 0,
+      "rating": 4.2,
+      "categories": ["audio"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-13",
+      "img": "/images/products/13.webp",
+      "title": "Lumia Beat Portable Max",
+      "description": "Premium portable solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 174,
+      "discountPercent": 0,
+      "rating": 4.9,
+      "categories": ["audio"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-14",
+      "img": "/images/products/1.webp",
+      "title": "Lumia Beam Ambient",
+      "description": "Premium ambient solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 238,
+      "discountPercent": 0,
+      "rating": 4.5,
+      "categories": ["lighting"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-15",
+      "img": "/images/products/8.webp",
+      "title": "Lumia Beat Smart Audio S",
+      "description": "Premium smart audio solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 698,
+      "discountPercent": 0,
+      "rating": 4.3,
+      "categories": ["audio"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-16",
+      "img": "/images/products/13.webp",
+      "title": "Lumia Zen Sleep Elite",
+      "description": "Premium sleep solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 294,
+      "discountPercent": 0,
+      "rating": 4.6,
+      "categories": ["wellness"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-17",
+      "img": "/images/products/17.webp",
+      "title": "Lumia Beam Ambient S",
+      "description": "Premium ambient solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 130,
+      "discountPercent": 0,
+      "rating": 4.4,
+      "categories": ["lighting"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-18",
+      "img": "/images/products/10.webp",
+      "title": "Lumia Ray Accent Prime",
+      "description": "Premium accent solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 146,
+      "discountPercent": 0,
+      "rating": 4.8,
+      "categories": ["lighting"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-19",
+      "img": "/images/products/7.webp",
+      "title": "Lumia Eclipse Desk",
+      "description": "Premium desk solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 58,
+      "discountPercent": 0,
+      "rating": 4.7,
+      "categories": ["lighting"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-20",
+      "img": "/images/products/10.webp",
+      "title": "Lumia Lumen Desk",
+      "description": "Premium desk solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 303,
+      "discountPercent": 0,
+      "rating": 4.2,
+      "categories": ["lighting"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-21",
+      "img": "/images/products/9.webp",
+      "title": "Lumia Connect Power Gen 2",
+      "description": "Premium power solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 38,
+      "discountPercent": 0,
+      "rating": 4.6,
+      "categories": ["electronics"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-22",
+      "img": "/images/products/9.webp",
+      "title": "Lumia Lock Sensors Compact",
+      "description": "Premium sensors solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 336,
+      "discountPercent": 0,
+      "rating": 4.3,
+      "categories": ["security"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-23",
+      "img": "/images/products/5.webp",
+      "title": "Lumia Breath Air Pro",
+      "description": "Premium air solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 768,
+      "discountPercent": 0,
+      "rating": 4.5,
+      "categories": ["wellness"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-24",
+      "img": "/images/products/14.webp",
+      "title": "Lumia Shift Organization Gen 2",
+      "description": "Premium organization solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 384,
+      "discountPercent": 0,
+      "rating": 4.3,
+      "categories": ["workspace"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-25",
+      "img": "/images/products/12.webp",
+      "title": "Lumia Shift Ergo Max",
+      "description": "Premium ergo solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 305,
+      "discountPercent": 0,
+      "rating": 4.2,
+      "categories": ["workspace"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-26",
+      "img": "/images/products/18.webp",
+      "title": "Lumia Shift Input Ultra",
+      "description": "Premium input solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 450,
+      "discountPercent": 0,
+      "rating": 4.9,
+      "categories": ["workspace"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-27",
+      "img": "/images/products/8.webp",
+      "title": "Lumia Grid Tools",
+      "description": "Premium tools solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 455,
+      "discountPercent": 0,
+      "rating": 4.2,
+      "categories": ["workspace"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-28",
+      "img": "/images/products/8.webp",
+      "title": "Lumia Flow Organization",
+      "description": "Premium organization solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 570,
+      "discountPercent": 30,
+      "rating": 4.6,
+      "categories": ["workspace", "discounted"],
+      "manualBadges": ["new"]
+    },
+    {
+      "id": "p-gen-29",
+      "img": "/images/products/8.webp",
+      "title": "Lumia Pulse Power Max",
+      "description": "Premium power solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 210,
+      "discountPercent": 0,
+      "rating": 4.6,
+      "categories": ["electronics"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-30",
+      "img": "/images/products/11.webp",
+      "title": "Lumia Lock Sensors Prime",
+      "description": "Premium sensors solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 220,
+      "discountPercent": 15,
+      "rating": 4.2,
+      "categories": ["security", "discounted"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-31",
+      "img": "/images/products/8.webp",
+      "title": "Lumia Wave Hi-Fi",
+      "description": "Premium hi-fi solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 526,
+      "discountPercent": 0,
+      "rating": 4.9,
+      "categories": ["audio"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-32",
+      "img": "/images/products/6.webp",
+      "title": "Lumia Core Organization Ultra",
+      "description": "Premium organization solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 214,
+      "discountPercent": 0,
+      "rating": 4.9,
+      "categories": ["workspace"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-33",
+      "img": "/images/products/12.webp",
+      "title": "Lumia Bridge Power Pro",
+      "description": "Premium power solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 136,
+      "discountPercent": 0,
+      "rating": 4.6,
+      "categories": ["electronics"],
+      "manualBadges": ["new"]
+    },
+    {
+      "id": "p-gen-34",
+      "img": "/images/products/2.webp",
+      "title": "Lumia Breath Balance Pro",
+      "description": "Premium balance solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 547,
+      "discountPercent": 30,
+      "rating": 4.3,
+      "categories": ["wellness", "discounted"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-35",
+      "img": "/images/products/9.webp",
+      "title": "Lumia Pure Sleep",
+      "description": "Premium sleep solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 168,
+      "discountPercent": 0,
+      "rating": 4.5,
+      "categories": ["wellness"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-36",
+      "img": "/images/products/12.webp",
+      "title": "Lumia Apex Organization S",
+      "description": "Premium organization solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 234,
+      "discountPercent": 0,
+      "rating": 4.6,
+      "categories": ["workspace"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-37",
+      "img": "/images/products/15.webp",
+      "title": "Lumia Lock Sensors",
+      "description": "Premium sensors solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 190,
+      "discountPercent": 0,
+      "rating": 4.9,
+      "categories": ["security"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-38",
+      "img": "/images/products/20.webp",
+      "title": "Lumia Secure Sensors",
+      "description": "Premium sensors solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 229,
+      "discountPercent": 0,
+      "rating": 4.9,
+      "categories": ["security"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-39",
+      "img": "/images/products/8.webp",
+      "title": "Lumia Core Tools Elite",
+      "description": "Premium tools solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 477,
+      "discountPercent": 0,
+      "rating": 5,
+      "categories": ["workspace"],
+      "manualBadges": ["new"]
+    },
+    {
+      "id": "p-gen-40",
+      "img": "/images/products/3.webp",
+      "title": "Lumia Core Ergo Gen 2",
+      "description": "Premium ergo solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 338,
+      "discountPercent": 0,
+      "rating": 4.4,
+      "categories": ["workspace"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-41",
+      "img": "/images/products/4.webp",
+      "title": "Lumia Ray Desk Pro",
+      "description": "Premium desk solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 79,
+      "discountPercent": 0,
+      "rating": 4.4,
+      "categories": ["lighting"],
+      "manualBadges": ["new"]
+    },
+    {
+      "id": "p-gen-42",
+      "img": "/images/products/9.webp",
+      "title": "Lumia Connect Hubs Pro",
+      "description": "Premium hubs solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 67,
+      "discountPercent": 0,
+      "rating": 4.2,
+      "categories": ["electronics"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-43",
+      "img": "/images/products/20.webp",
+      "title": "Lumia Lock Sensors",
+      "description": "Premium sensors solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 226,
+      "discountPercent": 0,
+      "rating": 4.6,
+      "categories": ["security"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-44",
+      "img": "/images/products/8.webp",
+      "title": "Lumia Core Input S",
+      "description": "Premium input solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 100,
+      "discountPercent": 25,
+      "rating": 4.6,
+      "categories": ["workspace", "discounted"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-45",
+      "img": "/images/products/12.webp",
+      "title": "Lumia Axis Tools Gen 2",
+      "description": "Premium tools solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 525,
+      "discountPercent": 0,
+      "rating": 4.4,
+      "categories": ["workspace"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-46",
+      "img": "/images/products/2.webp",
+      "title": "Lumia Pure Balance",
+      "description": "Premium balance solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 605,
+      "discountPercent": 0,
+      "rating": 4.3,
+      "categories": ["wellness"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-47",
+      "img": "/images/products/8.webp",
+      "title": "Lumia Wave Hi-Fi Max",
+      "description": "Premium hi-fi solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 296,
+      "discountPercent": 0,
+      "rating": 4.8,
+      "categories": ["audio"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-48",
+      "img": "/images/products/17.webp",
+      "title": "Lumia Opal Desk Max",
+      "description": "Premium desk solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 215,
+      "discountPercent": 0,
+      "rating": 4.4,
+      "categories": ["lighting"],
+      "manualBadges": ["new"]
+    },
+    {
+      "id": "p-gen-49",
+      "img": "/images/products/6.webp",
+      "title": "Lumia Link Input",
+      "description": "Premium input solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 580,
+      "discountPercent": 0,
+      "rating": 4.7,
+      "categories": ["workspace"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-50",
+      "img": "/images/products/6.webp",
+      "title": "Lumia Axis Ergo",
+      "description": "Premium ergo solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 73,
+      "discountPercent": 20,
+      "rating": 4.6,
+      "categories": ["workspace", "discounted"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-51",
+      "img": "/images/products/12.webp",
+      "title": "Lumia Shift Ergo",
+      "description": "Premium ergo solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 178,
+      "discountPercent": 15,
+      "rating": 4.6,
+      "categories": ["workspace", "discounted"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-52",
+      "img": "/images/products/18.webp",
+      "title": "Lumia Apex Organization",
+      "description": "Premium organization solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 145,
+      "discountPercent": 0,
+      "rating": 4.3,
+      "categories": ["workspace"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-53",
+      "img": "/images/products/7.webp",
+      "title": "Lumia Beam Desk",
+      "description": "Premium desk solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 257,
+      "discountPercent": 0,
+      "rating": 5,
+      "categories": ["lighting"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-54",
+      "img": "/images/products/17.webp",
+      "title": "Lumia Halo Smart",
+      "description": "Premium smart solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 157,
+      "discountPercent": 0,
+      "rating": 4.4,
+      "categories": ["lighting"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-55",
+      "img": "/images/products/9.webp",
+      "title": "Lumia Spark Power S",
+      "description": "Premium power solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 205,
+      "discountPercent": 0,
+      "rating": 4.8,
+      "categories": ["electronics"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-56",
+      "img": "/images/products/11.webp",
+      "title": "Lumia Volt Connectivity",
+      "description": "Premium connectivity solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 253,
+      "discountPercent": 0,
+      "rating": 4.5,
+      "categories": ["electronics"],
+      "manualBadges": ["new"]
+    },
+    {
+      "id": "p-gen-57",
+      "img": "/images/products/3.webp",
+      "title": "Lumia Link Input Max",
+      "description": "Premium input solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 484,
+      "discountPercent": 0,
+      "rating": 4.9,
+      "categories": ["workspace"],
+      "manualBadges": ["new"]
+    },
+    {
+      "id": "p-gen-58",
+      "img": "/images/products/5.webp",
+      "title": "Lumia Pure Sleep Pro",
+      "description": "Premium sleep solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 328,
+      "discountPercent": 30,
+      "rating": 4.6,
+      "categories": ["wellness", "discounted"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-59",
+      "img": "/images/products/2.webp",
+      "title": "Lumia Breath Balance",
+      "description": "Premium balance solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 778,
+      "discountPercent": 20,
+      "rating": 4.7,
+      "categories": ["wellness", "discounted"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-60",
+      "img": "/images/products/9.webp",
+      "title": "Lumia Cloud Air",
+      "description": "Premium air solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 213,
+      "discountPercent": 0,
+      "rating": 4.4,
+      "categories": ["wellness"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-61",
+      "img": "/images/products/6.webp",
+      "title": "Lumia Link Tools",
+      "description": "Premium tools solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 436,
+      "discountPercent": 0,
+      "rating": 4.3,
+      "categories": ["workspace"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-62",
+      "img": "/images/products/8.webp",
+      "title": "Lumia Node Power Prime",
+      "description": "Premium power solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 141,
+      "discountPercent": 0,
+      "rating": 4.3,
+      "categories": ["electronics"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-63",
+      "img": "/images/products/13.webp",
+      "title": "Lumia Zen Balance Max",
+      "description": "Premium balance solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 226,
+      "discountPercent": 0,
+      "rating": 4.6,
+      "categories": ["wellness"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-64",
+      "img": "/images/products/9.webp",
+      "title": "Lumia Secure Monitoring",
+      "description": "Premium monitoring solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 225,
+      "discountPercent": 0,
+      "rating": 4.5,
+      "categories": ["security"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-65",
+      "img": "/images/products/7.webp",
+      "title": "Lumia Lumen Floor",
+      "description": "Premium floor solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 293,
+      "discountPercent": 0,
+      "rating": 4.5,
+      "categories": ["lighting"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-66",
+      "img": "/images/products/16.webp",
+      "title": "Lumia Wave Hi-Fi Pro",
+      "description": "Premium hi-fi solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 493,
+      "discountPercent": 0,
+      "rating": 4.6,
+      "categories": ["audio"],
+      "manualBadges": ["new"]
+    },
+    {
+      "id": "p-gen-67",
+      "img": "/images/products/1.webp",
+      "title": "Lumia Beam Floor",
+      "description": "Premium floor solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 59,
+      "discountPercent": 0,
+      "rating": 4.4,
+      "categories": ["lighting"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-68",
+      "img": "/images/products/5.webp",
+      "title": "Lumia Cloud Climate Ultra",
+      "description": "Premium climate solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 628,
+      "discountPercent": 0,
+      "rating": 4.5,
+      "categories": ["wellness"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-69",
+      "img": "/images/products/16.webp",
+      "title": "Lumia Spark Power",
+      "description": "Premium power solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 78,
+      "discountPercent": 0,
+      "rating": 4.7,
+      "categories": ["electronics"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-70",
+      "img": "/images/products/2.webp",
+      "title": "Lumia Oasis Air Compact",
+      "description": "Premium air solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 212,
+      "discountPercent": 0,
+      "rating": 4.9,
+      "categories": ["wellness"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-71",
+      "img": "/images/products/9.webp",
+      "title": "Lumia Guard Access",
+      "description": "Premium access solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 216,
+      "discountPercent": 10,
+      "rating": 5,
+      "categories": ["security", "discounted"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-72",
+      "img": "/images/products/11.webp",
+      "title": "Lumia Watch Access S",
+      "description": "Premium access solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 245,
+      "discountPercent": 0,
+      "rating": 4.6,
+      "categories": ["security"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-73",
+      "img": "/images/products/5.webp",
+      "title": "Lumia Oasis Climate",
+      "description": "Premium climate solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 496,
+      "discountPercent": 20,
+      "rating": 4.9,
+      "categories": ["wellness", "discounted"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-74",
+      "img": "/images/products/20.webp",
+      "title": "Lumia Sight Access",
+      "description": "Premium access solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 491,
+      "discountPercent": 0,
+      "rating": 4.4,
+      "categories": ["security"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-75",
+      "img": "/images/products/16.webp",
+      "title": "Lumia Sonic Portable",
+      "description": "Premium portable solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 433,
+      "discountPercent": 0,
+      "rating": 4.9,
+      "categories": ["audio"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-76",
+      "img": "/images/products/17.webp",
+      "title": "Lumia Lumen Accent",
+      "description": "Premium accent solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 342,
+      "discountPercent": 0,
+      "rating": 4.8,
+      "categories": ["lighting"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-77",
+      "img": "/images/products/3.webp",
+      "title": "Lumia Shift Input S",
+      "description": "Premium input solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 469,
+      "discountPercent": 0,
+      "rating": 4.5,
+      "categories": ["workspace"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-78",
+      "img": "/images/products/12.webp",
+      "title": "Lumia Grid Input",
+      "description": "Premium input solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 281,
+      "discountPercent": 0,
+      "rating": 4.6,
+      "categories": ["workspace"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-79",
+      "img": "/images/products/12.webp",
+      "title": "Lumia Bridge Sensors Ultra",
+      "description": "Premium sensors solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 51,
+      "discountPercent": 0,
+      "rating": 4.4,
+      "categories": ["electronics"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-80",
+      "img": "/images/products/15.webp",
+      "title": "Lumia Sight Sensors",
+      "description": "Premium sensors solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 153,
+      "discountPercent": 20,
+      "rating": 4.6,
+      "categories": ["security", "discounted"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-81",
+      "img": "/images/products/9.webp",
+      "title": "Lumia Bridge Connectivity",
+      "description": "Premium connectivity solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 278,
+      "discountPercent": 0,
+      "rating": 4.5,
+      "categories": ["electronics"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-82",
+      "img": "/images/products/3.webp",
+      "title": "Lumia Apex Organization Elite",
+      "description": "Premium organization solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 462,
+      "discountPercent": 0,
+      "rating": 4.6,
+      "categories": ["workspace"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-83",
+      "img": "/images/products/16.webp",
+      "title": "Lumia Vibe Portable Prime",
+      "description": "Premium portable solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 891,
+      "discountPercent": 0,
+      "rating": 4.6,
+      "categories": ["audio"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-84",
+      "img": "/images/products/7.webp",
+      "title": "Lumia Halo Floor",
+      "description": "Premium floor solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 283,
+      "discountPercent": 10,
+      "rating": 4.7,
+      "categories": ["lighting", "discounted"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-85",
+      "img": "/images/products/13.webp",
+      "title": "Lumia Wave Hi-Fi Pro",
+      "description": "Premium hi-fi solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 758,
+      "discountPercent": 0,
+      "rating": 4.8,
+      "categories": ["audio"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-86",
+      "img": "/images/products/11.webp",
+      "title": "Lumia Secure Access",
+      "description": "Premium access solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 363,
+      "discountPercent": 0,
+      "rating": 5,
+      "categories": ["security"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-87",
+      "img": "/images/products/9.webp",
+      "title": "Lumia Watch Monitoring Prime",
+      "description": "Premium monitoring solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 304,
+      "discountPercent": 10,
+      "rating": 4.9,
+      "categories": ["security", "discounted"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-88",
+      "img": "/images/products/12.webp",
+      "title": "Lumia Link Hubs",
+      "description": "Premium hubs solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 215,
+      "discountPercent": 20,
+      "rating": 4.7,
+      "categories": ["electronics", "discounted"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-89",
+      "img": "/images/products/9.webp",
+      "title": "Lumia Vital Air",
+      "description": "Premium air solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 379,
+      "discountPercent": 0,
+      "rating": 4.4,
+      "categories": ["wellness"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-90",
+      "img": "/images/products/8.webp",
+      "title": "Lumia Bridge Sensors",
+      "description": "Premium sensors solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 290,
+      "discountPercent": 0,
+      "rating": 4.5,
+      "categories": ["electronics"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-91",
+      "img": "/images/products/8.webp",
+      "title": "Lumia Sonic Hi-Fi",
+      "description": "Premium hi-fi solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 639,
+      "discountPercent": 0,
+      "rating": 4.6,
+      "categories": ["audio"],
+      "manualBadges": ["new"]
+    },
+    {
+      "id": "p-gen-92",
+      "img": "/images/products/13.webp",
+      "title": "Lumia Beat Portable S",
+      "description": "Premium portable solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 766,
+      "discountPercent": 0,
+      "rating": 4.7,
+      "categories": ["audio"],
+      "manualBadges": ["new"]
+    },
+    {
+      "id": "p-gen-93",
+      "img": "/images/products/8.webp",
+      "title": "Lumia Link Ergo Compact",
+      "description": "Premium ergo solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 595,
+      "discountPercent": 15,
+      "rating": 4.6,
+      "categories": ["workspace", "discounted"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-94",
+      "img": "/images/products/12.webp",
+      "title": "Lumia Node Connectivity",
+      "description": "Premium connectivity solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 108,
+      "discountPercent": 20,
+      "rating": 4.9,
+      "categories": ["electronics", "discounted"],
+      "manualBadges": ["new"]
+    },
+    {
+      "id": "p-gen-95",
+      "img": "/images/products/4.webp",
+      "title": "Lumia Eclipse Floor",
+      "description": "Premium floor solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 141,
+      "discountPercent": 0,
+      "rating": 4.5,
+      "categories": ["lighting"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-96",
+      "img": "/images/products/16.webp",
+      "title": "Lumia Spark Connectivity",
+      "description": "Premium connectivity solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 86,
+      "discountPercent": 0,
+      "rating": 4.6,
+      "categories": ["electronics"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-97",
+      "img": "/images/products/9.webp",
+      "title": "Lumia Lock Monitoring Gen 2",
+      "description": "Premium monitoring solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 189,
+      "discountPercent": 10,
+      "rating": 4.6,
+      "categories": ["security", "discounted"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-98",
+      "img": "/images/products/14.webp",
+      "title": "Lumia Ray Floor",
+      "description": "Premium floor solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 123,
+      "discountPercent": 25,
+      "rating": 5,
+      "categories": ["lighting", "discounted"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-99",
+      "img": "/images/products/8.webp",
+      "title": "Lumia Link Input",
+      "description": "Premium input solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 141,
+      "discountPercent": 0,
+      "rating": 4.3,
+      "categories": ["workspace"],
+      "manualBadges": []
+    },
+    {
+      "id": "p-gen-100",
+      "img": "/images/products/8.webp",
+      "title": "Lumia Vibe Hi-Fi",
+      "description": "Premium hi-fi solution from Lumia. Engineered for minimalist homes and high performance.",
+      "basePrice": 557,
+      "discountPercent": 0,
+      "rating": 4.9,
+      "categories": ["audio"],
+      "manualBadges": []
     }
   ]
 }
