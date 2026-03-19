@@ -4,9 +4,11 @@ import { PostCard } from "./PostCard";
 
 interface PostGridProps {
   posts: PostType[];
+  full?: boolean;
 }
 
-export const PostGrid = ({ posts }: PostGridProps) => {
+export const PostGrid = (props: PostGridProps) => {
+  const { posts, full = false } = props;
   if (!posts || posts.length === 0) {
     return (
       <div className="flex w-full items-center justify-center rounded-2xl border border-dashed border-muted-foreground/25 p-12">
@@ -20,12 +22,14 @@ export const PostGrid = ({ posts }: PostGridProps) => {
       {posts.map((post, index) => {
         let visibilityClass = "block";
 
-        if (index > 0) {
-          visibilityClass = "hidden sm:block";
-        }
+        if (!full) {
+          if (index > 0) {
+            visibilityClass = "hidden sm:block";
+          }
 
-        if (index === MAX_POSTS_IN_GRID_MAIN - 1) {
-          visibilityClass = "lg:hidden";
+          if (index === MAX_POSTS_IN_GRID_MAIN - 1) {
+            visibilityClass = "lg:hidden";
+          }
         }
 
         return (

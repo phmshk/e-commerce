@@ -3,24 +3,24 @@ import { Metadata } from "next";
 import { ProductGrid, Product, ProductType } from "@/src/entities/product";
 
 export const metadata: Metadata = {
-  title: "Special Offers & Deals | Lumia Official Store",
+  title: "New Arrivals | Lumia Official Store",
   description:
-    "Explore exclusive discounts on Lumia smart home devices, premium electronics, and next-gen gadgets. Limited time offers with worldwide shipping.",
+    "Discover the latest innovations in smart home technology, electronics, and gadgets at Lumia.",
 };
 
 export const revalidate = 3600;
 
-export default async function SalesPage() {
+export default async function NewArrivalsPage() {
   await dbConnect();
-  const products = await Product.find({ discountPercent: { $gt: 0 } })
+  const products = await Product.find({ manualBadges: "new" })
     .select("-_id -__v")
-    .sort({ discountPercent: -1 })
+    .sort({ createdAt: -1 })
     .lean<ProductType[]>();
 
   return (
     <div className="flex flex-col gap-8">
       <h1 className="text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-        Special Offers
+        New Arrivals
       </h1>
       <ProductGrid products={products} full />
     </div>

@@ -4,9 +4,12 @@ import { ProductCard } from "./ProductCard";
 
 interface ProductGridProps {
   products: ProductType[];
+  full?: boolean;
 }
 
-export const ProductGrid = ({ products }: ProductGridProps) => {
+export const ProductGrid = (props: ProductGridProps) => {
+  const { products, full = false } = props;
+
   if (!products || products.length === 0) {
     return (
       <div className="flex w-full items-center justify-center rounded-2xl border border-dashed border-muted-foreground/25 p-12">
@@ -24,10 +27,12 @@ export const ProductGrid = ({ products }: ProductGridProps) => {
       {products.map((product, index) => {
         let visibilityClass = "block";
 
-        if (index === MAX_PRODUCTS_IN_GRID_MAIN - 2) {
-          visibilityClass = "hidden md:block";
-        } else if (index === MAX_PRODUCTS_IN_GRID_MAIN - 1) {
-          visibilityClass = "hidden xl:block";
+        if (!full) {
+          if (index === MAX_PRODUCTS_IN_GRID_MAIN - 2) {
+            visibilityClass = "hidden md:block";
+          } else if (index === MAX_PRODUCTS_IN_GRID_MAIN - 1) {
+            visibilityClass = "hidden xl:block";
+          }
         }
 
         return (

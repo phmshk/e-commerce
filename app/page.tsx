@@ -13,11 +13,11 @@ export default function Home() {
         <HeroCarousel />
       </section>
 
-      <SectionWrapper title="Special Offers" actionHref="/category/sale">
+      <SectionWrapper title="Special Offers" actionHref="/sale">
         <BlockSales />
       </SectionWrapper>
 
-      <SectionWrapper title="New Arrivals" actionHref="/category/new-arrivals">
+      <SectionWrapper title="New Arrivals" actionHref="/new-arrivals">
         <BlockNewArrivals />
       </SectionWrapper>
 

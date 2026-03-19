@@ -5,7 +5,7 @@ import { Logo } from "@/src/shared/ui/Logo";
 
 export const Header = () => {
   return (
-    <header className="relative z-50 w-full border-b border-border bg-background">
+    <header className="sticky top-0 z-50 w-full border-b border-border bg-background">
       <div
         className={cn(
           "mx-auto flex w-full max-w-[1440px] items-center justify-between gap-4 px-4 py-3",
