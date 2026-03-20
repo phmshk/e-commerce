@@ -22,6 +22,7 @@ const ProductSchema = new Schema<ProductDocument>(
 );
 
 ProductSchema.index({ discountPercent: -1 });
+ProductSchema.index({ createdAt: -1 });
 
 export default mongoose.models.Product ||
   mongoose.model<ProductDocument>("Product", ProductSchema);

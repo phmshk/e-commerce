@@ -4,7 +4,7 @@ import {
   ProductGrid,
   ProductType,
 } from "@/src/entities/product";
-import dbConnect from "@/src/shared/lib/dbConnect";
+import dbConnect from "@/src/shared/lib/db/dbConnect";
 
 export const revalidate = 3600;
 

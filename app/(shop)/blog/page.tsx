@@ -1,7 +1,7 @@
-import dbConnect from "@/src/shared/lib/dbConnect";
 import { Metadata } from "next";
-import { getLatestPosts, PostGrid } from "@/src/entities/post";
+import { PostApi, PostGrid } from "@/src/entities/post";
 import { BasePageLayout } from "@/src/shared/ui/BasePage";
+import { PaginationSection } from "@/src/shared/ui/PaginationSection";
 
 export const metadata: Metadata = {
   title: "Lumia Guides & News | Official Blog",
@@ -11,13 +11,26 @@ export const metadata: Metadata = {
 
 export const revalidate = 3600;
 
-export default async function BlogPage() {
-  await dbConnect();
-  const posts = await getLatestPosts();
+interface BlogPageProps {
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+}
+
+export default async function BlogPage(props: BlogPageProps) {
+  const { searchParams } = props;
+  const params = await searchParams;
+  const pageParam = Array.isArray(params.page) ? params.page[0] : params.page;
+  const currentPage = Number(pageParam) || 1;
+  const { items, metadata } = await PostApi.getLatestPosts({
+    page: currentPage,
+  });
 
   return (
     <BasePageLayout title="Lumia Guides & News">
-      <PostGrid posts={posts} full />
+      <PostGrid posts={items} full />
+      <PaginationSection
+        totalPages={metadata.pages}
+        currentPage={metadata.currentPage}
+      />
     </BasePageLayout>
   );
 }

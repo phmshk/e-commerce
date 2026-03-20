@@ -4,7 +4,7 @@ import {
   PostGrid,
   PostType,
 } from "@/src/entities/post";
-import dbConnect from "@/src/shared/lib/dbConnect";
+import dbConnect from "@/src/shared/lib/db/dbConnect";
 
 export const revalidate = 3600;
 

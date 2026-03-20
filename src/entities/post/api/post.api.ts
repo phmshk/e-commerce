@@ -1,9 +1,13 @@
-import { Post } from "..";
+import { PaginationParams } from "@/src/shared/lib/db/types";
+import { Post, PostDocument } from "..";
 import { PostType } from "../model/types";
+import { getPaginatedData } from "@/src/shared/lib/db/dbService";
 
-export const getLatestPosts = async () => {
-  return await Post.find({})
-    .sort({ publishedAt: -1 })
-    .select("-_id -__v")
-    .lean<PostType[]>();
+export const PostApi = {
+  async getLatestPosts(params: PaginationParams<PostType>) {
+    return getPaginatedData<PostType, PostDocument>(Post, {
+      ...params,
+      sort: { publishedAt: -1 },
+    });
+  },
 };

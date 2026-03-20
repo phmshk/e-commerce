@@ -1,7 +1,7 @@
-import dbConnect from "@/src/shared/lib/dbConnect";
 import { Metadata } from "next";
-import { ProductGrid, getNewArrivals } from "@/src/entities/product";
+import { ProductApi, ProductGrid } from "@/src/entities/product";
 import { BasePageLayout } from "@/src/shared/ui/BasePage";
+import { PaginationSection } from "@/src/shared/ui/PaginationSection";
 
 export const metadata: Metadata = {
   title: "New Arrivals | Lumia Official Store",
@@ -11,13 +11,26 @@ export const metadata: Metadata = {
 
 export const revalidate = 3600;
 
-export default async function NewArrivalsPage() {
-  await dbConnect();
-  const products = await getNewArrivals();
+interface NewArrivalsPageProps {
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+}
+
+export default async function NewArrivalsPage(props: NewArrivalsPageProps) {
+  const { searchParams } = props;
+  const params = await searchParams;
+  const pageParam = Array.isArray(params.page) ? params.page[0] : params.page;
+  const currentPage = Number(pageParam) || 1;
+  const { items, metadata } = await ProductApi.getNewArrivals({
+    page: currentPage,
+  });
 
   return (
     <BasePageLayout title="New Arrivals">
-      <ProductGrid products={products} full />
+      <ProductGrid products={items} full />
+      <PaginationSection
+        totalPages={metadata.pages}
+        currentPage={metadata.currentPage}
+      />
     </BasePageLayout>
   );
 }

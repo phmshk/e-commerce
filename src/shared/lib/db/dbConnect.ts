@@ -42,9 +42,9 @@ async function dbConnect() {
     cached!.promise = mongoose.connect(MONGODB_URI!, opts).then((mongoose) => {
       if (process.env.NODE_ENV === "development") {
         mongoose.set("debug", true);
+        console.log(process.env.DB_NAME);
+        console.log(MONGODB_URI);
       }
-      console.log(process.env.DB_NAME);
-      console.log(MONGODB_URI);
 
       return mongoose;
     });

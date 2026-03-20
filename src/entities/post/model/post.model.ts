@@ -1,4 +1,4 @@
-import mongoose, { Schema } from "mongoose";
+import mongoose, { Schema, Document } from "mongoose";
 import { PostType, POST_CATEGORIES } from "./types";
 
 export interface PostDocument extends PostType, Document {
