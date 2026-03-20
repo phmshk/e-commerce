@@ -1,4 +1,4 @@
-import { cn } from "@/shared/lib/utils";
+import { cn } from "@/src/shared/lib/utils/utils";
 import { Profile } from "./Profile";
 import { TopMenu } from "./TopMenu";
 

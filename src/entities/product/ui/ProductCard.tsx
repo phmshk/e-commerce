@@ -17,9 +17,13 @@ import { getActiveBadges, BADGE_CONFIG, formatPrice } from "../model/utils";
 
 interface ProductCardProps {
   product: ProductType;
+  prioritizeLoading: boolean;
 }
 
-export const ProductCard = ({ product }: ProductCardProps) => {
+export const ProductCard = ({
+  product,
+  prioritizeLoading,
+}: ProductCardProps) => {
   const { img, title, description, basePrice, discountPercent, rating } =
     product;
 
@@ -74,6 +78,7 @@ export const ProductCard = ({ product }: ProductCardProps) => {
           src={img}
           alt={`${title} product shot`}
           fill
+          priority={prioritizeLoading}
           sizes="(max-width: 640px) 320px, (max-width: 1024px) 340px, 360px"
           className="object-contain object-center"
         />

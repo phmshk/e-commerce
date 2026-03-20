@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import { ProductApi, ProductGrid } from "@/src/entities/product";
 import { BasePageLayout } from "@/src/shared/ui/BasePage";
 import { PaginationSection } from "@/src/shared/ui/PaginationSection";
+import { getValidPage, SearchParams } from "@/src/shared/lib/utils/pagination";
 
 export const metadata: Metadata = {
   title: "New Arrivals | Lumia Official Store",
@@ -12,14 +13,12 @@ export const metadata: Metadata = {
 export const revalidate = 3600;
 
 interface NewArrivalsPageProps {
-  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+  searchParams: SearchParams;
 }
 
 export default async function NewArrivalsPage(props: NewArrivalsPageProps) {
   const { searchParams } = props;
-  const params = await searchParams;
-  const pageParam = Array.isArray(params.page) ? params.page[0] : params.page;
-  const currentPage = Number(pageParam) || 1;
+  const currentPage = await getValidPage(searchParams);
   const { items, metadata } = await ProductApi.getNewArrivals({
     page: currentPage,
   });

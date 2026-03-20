@@ -4,7 +4,7 @@ import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { cn } from "@/shared/lib/utils";
+import { cn } from "@/src/shared/lib/utils/utils";
 import { Button } from "@/src/shared/ui/button";
 import {
   CarouselApi,

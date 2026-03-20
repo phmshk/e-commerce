@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/shared/ui/button";
 import { Logo } from "@/src/shared/ui/Logo";
+import { ROUTE_LABELS, ROUTES } from "@/src/shared/config/routes";
 
 const SOCIAL_LINKS = [
   {
@@ -17,11 +18,10 @@ const SOCIAL_LINKS = [
 ];
 
 const COMPANY_LINKS = [
-  { title: "About Us", href: "/about" },
-  { title: "Contact", href: "/contact" },
-  { title: "Careers", href: "/careers" },
-  { title: "Journal", href: "/blog" },
-  { title: "Support", href: "/support" },
+  { title: ROUTE_LABELS.about, href: ROUTES.ABOUT },
+  { title: ROUTE_LABELS.contact, href: ROUTES.CONTACT },
+  { title: ROUTE_LABELS.careers, href: ROUTES.CAREERS },
+  { title: ROUTE_LABELS.blog, href: ROUTES.BLOG },
 ];
 
 export const Footer = () => {

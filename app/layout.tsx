@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/src/widgets/header";
 import { Footer } from "@/src/widgets/footer";
+import { Breadcrumbs } from "@/src/widgets/breadcrumb";
 
 const interFont = Inter({
   variable: "--font-inter",
@@ -25,6 +26,7 @@ export default function RootLayout({
         className={`${interFont.variable} ${interFont.className} min-h-screen antialiased pb-16 md:pb-0`}
       >
         <Header />
+        <Breadcrumbs />
         {children}
         <Footer />
       </body>

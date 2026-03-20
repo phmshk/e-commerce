@@ -1,4 +1,4 @@
-import { cn } from "@/shared/lib/utils";
+import { cn } from "@/src/shared/lib/utils/utils";
 import { Button } from "@/src/shared/ui/button";
 import { Menu } from "lucide-react";
 

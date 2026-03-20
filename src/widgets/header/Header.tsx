@@ -1,4 +1,4 @@
-import { cn } from "@/shared/lib/utils";
+import { cn } from "@/src/shared/lib/utils/utils";
 import { BlockSearch } from "./search";
 import { BlockUser } from "./user";
 import { Logo } from "@/src/shared/ui/Logo";

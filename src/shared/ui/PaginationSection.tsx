@@ -11,7 +11,7 @@ import {
 } from "@/src/shared/ui/pagination";
 import { usePathname, useSearchParams } from "next/navigation";
 import { ELLIPSIS, usePagination } from "@/src/shared/hooks/use-pagination";
-import { cn } from "../lib/utils";
+import { cn } from "../lib/utils/utils";
 
 interface PaginationSectionProps {
   totalPages: number;

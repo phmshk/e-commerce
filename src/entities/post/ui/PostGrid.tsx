@@ -34,7 +34,10 @@ export const PostGrid = (props: PostGridProps) => {
 
         return (
           <div key={post.id} className={visibilityClass}>
-            <PostCard post={post} />
+            <PostCard
+              post={post}
+              prioritizeLoading={index < MAX_POSTS_IN_GRID_MAIN}
+            />
           </div>
         );
       })}

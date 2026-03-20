@@ -37,7 +37,10 @@ export const ProductGrid = (props: ProductGridProps) => {
 
         return (
           <div key={product.id} className={visibilityClass}>
-            <ProductCard product={product} />
+            <ProductCard
+              product={product}
+              prioritizeLoading={index < MAX_PRODUCTS_IN_GRID_MAIN}
+            />
           </div>
         );
       })}

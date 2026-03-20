@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import { PostApi, PostGrid } from "@/src/entities/post";
 import { BasePageLayout } from "@/src/shared/ui/BasePage";
 import { PaginationSection } from "@/src/shared/ui/PaginationSection";
+import { getValidPage, SearchParams } from "@/src/shared/lib/utils/pagination";
 
 export const metadata: Metadata = {
   title: "Lumia Guides & News | Official Blog",
@@ -12,14 +13,12 @@ export const metadata: Metadata = {
 export const revalidate = 3600;
 
 interface BlogPageProps {
-  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+  searchParams: SearchParams;
 }
 
 export default async function BlogPage(props: BlogPageProps) {
   const { searchParams } = props;
-  const params = await searchParams;
-  const pageParam = Array.isArray(params.page) ? params.page[0] : params.page;
-  const currentPage = Number(pageParam) || 1;
+  const currentPage = await getValidPage(searchParams);
   const { items, metadata } = await PostApi.getLatestPosts({
     page: currentPage,
   });

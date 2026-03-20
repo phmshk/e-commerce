@@ -1,11 +1,12 @@
-import { cn } from "@/shared/lib/utils";
+import { cn } from "@/src/shared/lib/utils/utils";
 import { ShoppingBag } from "lucide-react";
 import Link from "next/link";
+import { ROUTES } from "../config/routes";
 
 export const Logo = () => {
   return (
     <Link
-      href="/"
+      href={ROUTES.HOME}
       className="group flex flex-row gap-3 items-center cursor-pointer outline-none"
     >
       <div

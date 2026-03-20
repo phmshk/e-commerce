@@ -1,4 +1,4 @@
-import { cn } from "@/shared/lib/utils";
+import { cn } from "@/src/shared/lib/utils/utils";
 import { Card } from "@/shared/ui/card";
 
 export const BaseCard = ({

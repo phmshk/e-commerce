@@ -1,3 +1,4 @@
+import { ROUTES } from "@/src/shared/config/routes";
 import { SectionWrapper } from "@/src/shared/ui/SectionWrapper";
 import { HeroCarousel } from "@/src/widgets/hero-carousel";
 import {
@@ -9,21 +10,21 @@ import {
 export default function Home() {
   return (
     <main className="grid grid-cols-[minmax(1rem,1fr)_minmax(0,1440px)_minmax(1rem,1fr)]">
-      <section className="col-span-full w-full bg-slate-900">
+      <section className="col-span-full w-full">
         <HeroCarousel />
       </section>
 
-      <SectionWrapper title="Special Offers" actionHref="/sale">
+      <SectionWrapper title="special-offers" actionHref={ROUTES.SPECIAL_OFFERS}>
         <BlockSales />
       </SectionWrapper>
 
-      <SectionWrapper title="New Arrivals" actionHref="/new-arrivals">
+      <SectionWrapper title="new-arrivals" actionHref={ROUTES.NEW_ARRIVALS}>
         <BlockNewArrivals />
       </SectionWrapper>
 
       <SectionWrapper
-        title="Lumia Guides & News"
-        actionHref="/blog"
+        title="blog"
+        actionHref={ROUTES.BLOG}
         actionLabel="Read all stories"
       >
         <BlockLatestPosts />

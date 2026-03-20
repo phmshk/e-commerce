@@ -1,3 +1,5 @@
+import { ROUTES } from "@/src/shared/config/routes";
+
 interface HeroSlide {
   id: string;
   title: string;
@@ -15,7 +17,7 @@ export const HERO_SLIDES: HeroSlide[] = [
     description:
       "Discover our collection of smart ambient lamps designed to sync with your lifestyle.",
     cta: "Shop Lighting",
-    href: "/category/lighting",
+    href: ROUTES.CATALOG_CATEGORY("lighting"),
     align: "left",
     image: "/images/carousel/light-carousel.webp",
   },
@@ -25,7 +27,8 @@ export const HERO_SLIDES: HeroSlide[] = [
     description:
       "Professional-grade tools and wireless solutions for a clutter-free desk.",
     cta: "Upgrade Your Desk",
-    href: "/category/workspace",
+    href: ROUTES.CATALOG_CATEGORY("workspace"),
+
     align: "left",
     image: "/images/carousel/desk-carousel.webp",
   },
@@ -35,7 +38,7 @@ export const HERO_SLIDES: HeroSlide[] = [
     description:
       "Intelligent air systems that maintain the perfect atmosphere in your home.",
     cta: "Explore Wellness",
-    href: "/category/wellness",
+    href: ROUTES.CATALOG_CATEGORY("wellness"),
     align: "left",
     image: "/images/carousel/air-carousel.webp",
   },

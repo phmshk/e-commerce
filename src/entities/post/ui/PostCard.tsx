@@ -3,18 +3,20 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Clock, ArrowUpRight } from "lucide-react";
-import { formatDate } from "@/src/shared/lib/utils";
+import { formatDate } from "@/src/shared/lib/utils/utils";
 import { BaseCard } from "@/src/shared/ui/BaseCard";
 import { CardHeader, CardContent, CardFooter } from "@/src/shared/ui/card";
 import { PostType } from "../model/types";
 import { categoryLabels } from "../model/constants";
 import { Badge } from "@/src/shared/ui/badge";
+import { ROUTES } from "@/src/shared/config/routes";
 
 interface PostCardProps {
   post: PostType;
+  prioritizeLoading: boolean;
 }
 
-export const PostCard = ({ post }: PostCardProps) => {
+export const PostCard = ({ post, prioritizeLoading }: PostCardProps) => {
   const {
     slug,
     title,
@@ -27,7 +29,7 @@ export const PostCard = ({ post }: PostCardProps) => {
   } = post;
 
   return (
-    <Link href={`/blog/${slug}`} className="group block h-full">
+    <Link href={`${ROUTES.BLOG}/${slug}`} className="group block h-full">
       <BaseCard className="relative h-full  border-none pt-0">
         {/* Image Wrapper */}
         <div className="relative aspect-16/10 w-full overflow-hidden">
@@ -72,11 +74,11 @@ export const PostCard = ({ post }: PostCardProps) => {
               <div className="relative size-9 overflow-hidden rounded-full bg-secondary ring-2 ring-background shadow-sm">
                 <Image
                   src={author.avatar}
-                  alt={`${author.name} — ${author.role}`}
+                  alt={`${author.name}`}
                   fill
+                  priority={prioritizeLoading}
                   sizes="36px"
                   className="object-cover "
-                  loading="lazy"
                 />
               </div>
             ) : (
