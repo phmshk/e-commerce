@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "db:up": "docker-compose up -d",
+    "db:stop": "docker-compose stop",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",

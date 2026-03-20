@@ -43,6 +43,9 @@ async function dbConnect() {
       if (process.env.NODE_ENV === "development") {
         mongoose.set("debug", true);
       }
+      console.log(process.env.DB_NAME);
+      console.log(MONGODB_URI);
+
       return mongoose;
     });
   }

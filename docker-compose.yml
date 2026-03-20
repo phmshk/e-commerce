@@ -1,0 +1,13 @@
+services:
+  mongodb:
+    image: mongodb/mongodb-community-server:latest
+    container_name: nextjs-mongo-local
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+    environment:
+      - MONGODB_INITDB_DATABASE=LUMIA_SHOP
+
+volumes:
+  mongo-data:

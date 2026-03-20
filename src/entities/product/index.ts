@@ -4,3 +4,4 @@ export * from "./model/types";
 export { default as Product } from "./model/product.model";
 export type { ProductDocument } from "./model/product.model";
 export * from "./model/constants";
+export * from "./api/product.api";

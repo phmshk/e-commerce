@@ -1,6 +1,7 @@
 import dbConnect from "@/src/shared/lib/dbConnect";
 import { Metadata } from "next";
-import { Post, PostGrid, PostType } from "@/src/entities/post";
+import { getLatestPosts, PostGrid } from "@/src/entities/post";
+import { BasePageLayout } from "@/src/shared/ui/BasePage";
 
 export const metadata: Metadata = {
   title: "Lumia Guides & News | Official Blog",
@@ -12,17 +13,11 @@ export const revalidate = 3600;
 
 export default async function BlogPage() {
   await dbConnect();
-  const posts = await Post.find({})
-    .sort({ publishedAt: -1 })
-    .select("-_id -__v")
-    .lean<PostType[]>();
+  const posts = await getLatestPosts();
 
   return (
-    <div className="flex flex-col gap-8">
-      <h1 className="text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-        Lumia Guides & News
-      </h1>
+    <BasePageLayout title="Lumia Guides & News">
       <PostGrid posts={posts} full />
-    </div>
+    </BasePageLayout>
   );
 }

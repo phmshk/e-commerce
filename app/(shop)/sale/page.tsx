@@ -1,6 +1,7 @@
 import dbConnect from "@/src/shared/lib/dbConnect";
 import { Metadata } from "next";
-import { ProductGrid, Product, ProductType } from "@/src/entities/product";
+import { ProductGrid, getDiscountedProducts } from "@/src/entities/product";
+import { BasePageLayout } from "@/src/shared/ui/BasePage";
 
 export const metadata: Metadata = {
   title: "Special Offers & Deals | Lumia Official Store",
@@ -12,17 +13,11 @@ export const revalidate = 3600;
 
 export default async function SalesPage() {
   await dbConnect();
-  const products = await Product.find({ discountPercent: { $gt: 0 } })
-    .select("-_id -__v")
-    .sort({ discountPercent: -1 })
-    .lean<ProductType[]>();
+  const products = await getDiscountedProducts();
 
   return (
-    <div className="flex flex-col gap-8">
-      <h1 className="text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-        Special Offers
-      </h1>
+    <BasePageLayout title="Special Offers">
       <ProductGrid products={products} full />
-    </div>
+    </BasePageLayout>
   );
 }
