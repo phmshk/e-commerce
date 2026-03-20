@@ -3,9 +3,10 @@ import { PostApi, PostGrid } from "@/src/entities/post";
 import { BasePageLayout } from "@/src/shared/ui/BasePage";
 import { PaginationSection } from "@/src/shared/ui/PaginationSection";
 import { getValidPage, SearchParams } from "@/src/shared/lib/utils/pagination";
+import { ROUTE_LABELS } from "@/src/shared/config/routes";
 
 export const metadata: Metadata = {
-  title: "Lumia Guides & News | Official Blog",
+  title: "Guides & News | Official Blog",
   description:
     "Stay updated with the latest in smart home tech, how-to guides, and company news from Lumia.",
 };
@@ -24,7 +25,7 @@ export default async function BlogPage(props: BlogPageProps) {
   });
 
   return (
-    <BasePageLayout title="Lumia Guides & News">
+    <BasePageLayout title={ROUTE_LABELS.blog}>
       <PostGrid posts={items} full />
       <PaginationSection
         totalPages={metadata.pages}

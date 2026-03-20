@@ -76,8 +76,7 @@ export const PostCard = ({ post, prioritizeLoading }: PostCardProps) => {
                   src={author.avatar}
                   alt={`${author.name}`}
                   fill
-                  priority={prioritizeLoading}
-                  sizes="36px"
+                  sizes="72px"
                   className="object-cover "
                 />
               </div>
