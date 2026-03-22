@@ -1,7 +1,12 @@
 export { ProductCard } from "./ui/ProductCard";
 export { ProductGrid } from "./ui/ProductGrid";
+export { CategoryCard } from "./ui/categories/CategoryCard";
+export { CategoryGrid } from "./ui/categories/CategoryGrid";
 export * from "./model/types";
 export { default as Product } from "./model/product.model";
 export type { ProductDocument } from "./model/product.model";
+export { default as Category } from "./model/category.model";
+export type { CategoryDocument } from "./model/category.model";
 export * from "./model/constants";
 export * from "./api/product.api";
+export * from "./lib/grid-mapping";

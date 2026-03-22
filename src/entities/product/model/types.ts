@@ -25,3 +25,12 @@ export interface ProductType {
   stock?: number;
   manualBadges: ProductBadgeType[];
 }
+
+export type CategoryLayoutType = "hero" | "featured" | "standard";
+
+export interface CategoryType {
+  category_id: ProductCategoryType;
+  order: number;
+  title: string;
+  layout: CategoryLayoutType;
+}

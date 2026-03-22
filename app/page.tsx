@@ -14,17 +14,23 @@ export default function Home() {
         <HeroCarousel />
       </section>
 
-      <SectionWrapper title="special-offers" actionHref={ROUTES.SPECIAL_OFFERS}>
+      <SectionWrapper
+        title={ROUTES.SHOP.SPECIAL_OFFERS.labels.full}
+        actionHref={ROUTES.SHOP.SPECIAL_OFFERS.path}
+      >
         <BlockSales />
       </SectionWrapper>
 
-      <SectionWrapper title="new-arrivals" actionHref={ROUTES.NEW_ARRIVALS}>
+      <SectionWrapper
+        title={ROUTES.SHOP.NEW_ARRIVALS.labels.full}
+        actionHref={ROUTES.SHOP.NEW_ARRIVALS.path}
+      >
         <BlockNewArrivals />
       </SectionWrapper>
 
       <SectionWrapper
-        title="blog"
-        actionHref={ROUTES.BLOG}
+        title={ROUTES.CONTENT.BLOG.labels.full}
+        actionHref={ROUTES.CONTENT.BLOG.path}
         actionLabel="Read all stories"
       >
         <BlockLatestPosts />

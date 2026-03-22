@@ -1,0 +1,38 @@
+[
+  {
+    "category_id": "lighting",
+    "order": 1,
+    "title": "Smart Lighting",
+    "layout": "hero"
+  },
+  {
+    "category_id": "workspace",
+    "order": 2,
+    "title": "Minimalist Workspace",
+    "layout": "standard"
+  },
+  {
+    "category_id": "wellness",
+    "order": 3,
+    "title": "Modern Wellness",
+    "layout": "standard"
+  },
+  {
+    "category_id": "electronics",
+    "order": 4,
+    "title": "Eco Electronics",
+    "layout": "standard"
+  },
+  {
+    "category_id": "security",
+    "order": 5,
+    "title": "Home Security",
+    "layout": "standard"
+  },
+  {
+    "category_id": "audio",
+    "order": 6,
+    "title": "Premium Audio",
+    "layout": "featured"
+  }
+]

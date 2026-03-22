@@ -3,7 +3,7 @@ import { ProductApi, ProductGrid } from "@/src/entities/product";
 import { BasePageLayout } from "@/src/shared/ui/BasePage";
 import { PaginationSection } from "@/src/shared/ui/PaginationSection";
 import { getValidPage, SearchParams } from "@/src/shared/lib/utils/pagination";
-import { ROUTE_LABELS } from "@/src/shared/config/routes";
+import { ROUTES } from "@/src/shared/config/routes";
 
 export const metadata: Metadata = {
   title: "Special Offers & Deals | Lumia Official Store",
@@ -25,7 +25,7 @@ export default async function SalesPage(props: SalesPageProps) {
   });
 
   return (
-    <BasePageLayout title={ROUTE_LABELS["special-offers"]}>
+    <BasePageLayout title={ROUTES.SHOP.SPECIAL_OFFERS.labels.full}>
       <ProductGrid products={items} full />
       <PaginationSection
         totalPages={metadata.pages}

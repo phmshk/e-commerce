@@ -14,7 +14,7 @@ import {
   BreadcrumbSeparator,
 } from "@/shared/ui/breadcrumb";
 import { formatSegment } from "../model/utils";
-import { ROUTE_LABELS, ROUTES } from "@/src/shared/config/routes";
+import { ROUTES } from "@/src/shared/config/routes";
 
 interface BreadcrumbsProps {
   className?: string;
@@ -30,7 +30,7 @@ export const Breadcrumbs = ({ className }: BreadcrumbsProps) => {
       const href = `/${segments.slice(0, index + 1).join("/")}`;
       const isLast = index === segments.length - 1;
 
-      const label = formatSegment(segment);
+      const label = formatSegment(segment, "full");
 
       return {
         href,
@@ -45,18 +45,21 @@ export const Breadcrumbs = ({ className }: BreadcrumbsProps) => {
   }
 
   return (
-    <nav aria-label="Breadcrumb" className={cn("w-full px-4 py-3", className)}>
+    <nav
+      aria-label="Breadcrumb"
+      className={cn("w-full p-3 max-w-[1440px] mx-auto", className)}
+    >
       <Breadcrumb>
         <BreadcrumbList className="flex-wrap sm:gap-1">
           <BreadcrumbItem>
             <BreadcrumbLink asChild>
               <Link
-                href={ROUTES.HOME}
+                href={ROUTES.MAIN.HOME.path}
                 className="flex items-center gap-1.5 transition-colors hover:text-primary focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none rounded-md"
               >
                 <Home className="size-4 shrink-0" />
                 <span className="sr-only sm:not-sr-only">
-                  {ROUTE_LABELS.home}
+                  {ROUTES.MAIN.HOME.labels.short}
                 </span>
               </Link>
             </BreadcrumbLink>

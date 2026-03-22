@@ -5,11 +5,10 @@ import { Logo } from "@/src/shared/ui/Logo";
 
 export const Header = () => {
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border bg-background">
+    <header className="sticky top-0 z-50 w-full border-b border-border bg-background px-4 md:px-8 py-3">
       <div
         className={cn(
-          "mx-auto flex w-full max-w-[1440px] items-center justify-between gap-4 px-4 py-3",
-          "md:flex-row md:px-8",
+          "mx-auto flex w-full max-w-[1440px] items-center justify-between gap-4 ",
         )}
       >
         <div className="flex shrink-0 items-center">

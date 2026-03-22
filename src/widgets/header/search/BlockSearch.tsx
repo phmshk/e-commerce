@@ -1,10 +1,10 @@
 import { BlockInput } from "./BlockInput";
-import { SearchButton } from "./SearchButton";
+import { CatalogButton } from "./CatalogButton";
 
 export const BlockSearch = () => {
   return (
     <div className="flex flex-row gap-4 w-full grow">
-      <SearchButton />
+      <CatalogButton />
       <BlockInput />
     </div>
   );

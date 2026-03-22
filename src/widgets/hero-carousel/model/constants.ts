@@ -17,7 +17,7 @@ export const HERO_SLIDES: HeroSlide[] = [
     description:
       "Discover our collection of smart ambient lamps designed to sync with your lifestyle.",
     cta: "Shop Lighting",
-    href: ROUTES.CATALOG_CATEGORY("lighting"),
+    href: ROUTES.SHOP.CATEGORY("lighting"),
     align: "left",
     image: "/images/carousel/light-carousel.webp",
   },
@@ -27,7 +27,7 @@ export const HERO_SLIDES: HeroSlide[] = [
     description:
       "Professional-grade tools and wireless solutions for a clutter-free desk.",
     cta: "Upgrade Your Desk",
-    href: ROUTES.CATALOG_CATEGORY("workspace"),
+    href: ROUTES.SHOP.CATEGORY("workspace"),
 
     align: "left",
     image: "/images/carousel/desk-carousel.webp",
@@ -38,7 +38,7 @@ export const HERO_SLIDES: HeroSlide[] = [
     description:
       "Intelligent air systems that maintain the perfect atmosphere in your home.",
     cta: "Explore Wellness",
-    href: ROUTES.CATALOG_CATEGORY("wellness"),
+    href: ROUTES.SHOP.CATEGORY("wellness"),
     align: "left",
     image: "/images/carousel/air-carousel.webp",
   },

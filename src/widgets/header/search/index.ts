@@ -1,3 +1,3 @@
 export { BlockInput } from "./BlockInput";
 export { BlockSearch } from "./BlockSearch";
-export { SearchButton } from "./SearchButton";
+export { CatalogButton } from "./CatalogButton";

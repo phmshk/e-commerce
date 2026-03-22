@@ -6,7 +6,7 @@ import { ROUTES } from "../config/routes";
 export const Logo = () => {
   return (
     <Link
-      href={ROUTES.HOME}
+      href={ROUTES.MAIN.HOME.path}
       className="group flex flex-row gap-3 items-center cursor-pointer outline-none"
     >
       <div

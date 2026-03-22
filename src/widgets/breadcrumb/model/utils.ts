@@ -1,18 +1,18 @@
-import {
-  type StaticRouteSegment,
-  ROUTE_LABELS,
-} from "@/src/shared/config/routes";
+import { ROUTE_MAP } from "@/src/shared/config/routes";
 
-const isStaticSegment = (segment: string): segment is StaticRouteSegment => {
-  return segment in ROUTE_LABELS;
-};
+export const formatSegment = (
+  pathOrSegment: string,
+  type: "short" | "full" = "short",
+): string => {
+  const key = pathOrSegment.startsWith("/")
+    ? pathOrSegment
+    : `/${pathOrSegment}`;
 
-export const formatSegment = (segment: string): string => {
-  if (isStaticSegment(segment)) {
-    return ROUTE_LABELS[segment];
+  if (key in ROUTE_MAP) {
+    return ROUTE_MAP[key][type];
   }
 
-  return segment
+  return pathOrSegment
     .split("-")
     .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
     .join(" ");

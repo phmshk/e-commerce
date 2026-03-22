@@ -3,7 +3,7 @@ import { PostApi, PostGrid } from "@/src/entities/post";
 import { BasePageLayout } from "@/src/shared/ui/BasePage";
 import { PaginationSection } from "@/src/shared/ui/PaginationSection";
 import { getValidPage, SearchParams } from "@/src/shared/lib/utils/pagination";
-import { ROUTE_LABELS } from "@/src/shared/config/routes";
+import { ROUTES } from "@/src/shared/config/routes";
 
 export const metadata: Metadata = {
   title: "Guides & News | Official Blog",
@@ -25,7 +25,7 @@ export default async function BlogPage(props: BlogPageProps) {
   });
 
   return (
-    <BasePageLayout title={ROUTE_LABELS.blog}>
+    <BasePageLayout title={ROUTES.CONTENT.BLOG.labels.full}>
       <PostGrid posts={items} full />
       <PaginationSection
         totalPages={metadata.pages}
